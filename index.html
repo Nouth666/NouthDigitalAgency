@@ -540,9 +540,7 @@
       <h2 class="font-display text-4xl md:text-5xl font-bold mb-4" style="line-height:1.1;letter-spacing:-0.02em;">
         Наши <span class="gradient-text">проекты</span>
       </h2>
-      <p style="color:rgba(255,255,255,0.35);font-size:16px;max-width:520px;margin:0 auto;">
-        Несколько демонстрационных проектов, показывающих наш подход к дизайну и маркетингу.
-      </p>
+
     </div>
 
     <div class="grid md:grid-cols-3 gap-6 reveal">
@@ -763,19 +761,12 @@
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
+    <div class="grid md:grid-cols-3 gap-6 reveal" style="max-width:900px;margin:0 auto;">
       <!-- Card 1 -->
       <div class="glass p-8 rounded-2xl" style="border-color:rgba(0,245,255,0.1);transition:all 0.4s ease;" onmouseover="this.style.borderColor='rgba(0,245,255,0.25)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(0,245,255,0.1)';this.style.transform='translateY(0)'">
         <div style="font-size:32px;margin-bottom:20px;">⚡</div>
         <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin-bottom:10px;font-family:'Syne',sans-serif;">Лендинг за 3–5 дней</h3>
         <p style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6;">Быстрый запуск проекта без потери качества.</p>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="glass p-8 rounded-2xl" style="border-color:rgba(139,92,246,0.1);transition:all 0.4s ease;" onmouseover="this.style.borderColor='rgba(139,92,246,0.25)';this.style.transform='translateY(-4px)'" onmouseout="this.style.borderColor='rgba(139,92,246,0.1)';this.style.transform='translateY(0)'">
-        <div style="font-size:32px;margin-bottom:20px;">📄</div>
-        <h3 style="font-size:16px;font-weight:700;color:#e2e8f0;margin-bottom:10px;font-family:'Syne',sans-serif;">Работа по договору</h3>
-        <p style="font-size:13px;color:rgba(255,255,255,0.4);line-height:1.6;">Все условия и сроки фиксируются заранее.</p>
       </div>
 
       <!-- Card 3 -->
@@ -1218,6 +1209,92 @@
   50% { opacity: 0.5; transform: scale(0.8); }
 }
 </style>
+
+<!-- Floating Telegram Button -->
+<style>
+  #tgFloatBtn {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 9990;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    border-radius: 100px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(0,245,255,0.25);
+    text-decoration: none;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.4), 0 0 20px rgba(0,245,255,0.1);
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    transition: opacity 0.5s ease, transform 0.4s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+  }
+  #tgFloatBtn:hover {
+    background: rgba(0,245,255,0.08) !important;
+    border-color: rgba(0,245,255,0.55) !important;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5), 0 0 32px rgba(0,245,255,0.2) !important;
+    transform: translateY(-3px) scale(1.04) !important;
+  }
+  #tgFloatBtn .tg-logo {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+  }
+  #tgFloatBtn .tg-label {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #e2e8f0;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+  @media (max-width: 768px) {
+    #tgFloatBtn {
+      bottom: 20px;
+      right: 16px;
+      padding: 11px 16px;
+      gap: 8px;
+    }
+    #tgFloatBtn .tg-logo {
+      width: 19px;
+      height: 19px;
+    }
+    #tgFloatBtn .tg-label {
+      font-size: 13px;
+    }
+  }
+</style>
+
+<a href="https://t.me/arkady115" target="_blank" id="tgFloatBtn" title="Написать в Telegram">
+  <!-- Official Telegram logo SVG -->
+  <svg class="tg-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="12" fill="url(#tg-grad)"/>
+    <path d="M5.5 11.8L17.2 7.3C17.8 7.1 18.3 7.5 18.1 8.2L16.2 16.8C16.1 17.3 15.7 17.5 15.3 17.2L12.6 15.2L11.3 16.4C11.1 16.6 10.9 16.7 10.6 16.7L10.8 13.9L15.8 9.4C16 9.2 15.8 9.1 15.5 9.3L9.3 13.2L6.6 12.4C6 12.2 6 11.9 6.7 11.6L5.5 11.8Z" fill="white"/>
+    <defs>
+      <linearGradient id="tg-grad" x1="0" y1="0" x2="24" y2="24" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#2AABEE"/>
+        <stop offset="100%" stop-color="#229ED9"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  <span class="tg-label">Написать в Telegram</span>
+</a>
+
+<script>
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var btn = document.getElementById('tgFloatBtn');
+      if (btn) {
+        btn.style.opacity = '1';
+        btn.style.transform = 'translateY(0) scale(1)';
+      }
+    }, 600);
+  });
+</script>
 
 </body>
 </html>

@@ -458,6 +458,10 @@
         <i data-lucide="send" style="width:16px;height:16px;"></i>
         Написать в Telegram
       </a>
+      <a href="https://t.me/nouthagency" target="_blank" class="btn-secondary">
+        <i data-lucide="send" style="width:16px;height:16px;"></i>
+        Наш Telegram-канал
+      </a>
     </div>
 
     <!-- Stats row -->
@@ -1095,6 +1099,123 @@
     </div>
   </div>
 </section>
+
+<!-- FAQ -->
+<section id="faq" style="padding:120px 0;position:relative;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="reveal" style="text-align:center;margin-bottom:64px;">
+      <div class="section-label">FAQ</div>
+      <h2 class="font-display gradient-text" style="font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-0.02em;margin-bottom:16px;">Часто задаваемые вопросы</h2>
+      <p style="font-size:17px;color:rgba(255,255,255,0.4);max-width:520px;margin:0 auto;line-height:1.6;">Ответы на самые популярные вопросы о разработке сайтов и настройке рекламы.</p>
+    </div>
+
+    <div class="reveal" style="max-width:800px;margin:0 auto;">
+      <div class="faq-list" style="display:flex;flex-direction:column;gap:12px;">
+
+        <div class="faq-item glass" style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);transition:border-color 0.3s ease;">
+          <button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;background:none;border:none;cursor:pointer;text-align:left;">
+            <span style="font-size:16px;font-weight:500;color:#e2e8f0;line-height:1.4;">Сколько времени занимает разработка сайта?</span>
+            <span class="faq-icon" style="flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(0,245,255,0.25);display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#00f5ff;font-size:18px;font-weight:300;line-height:1;">+</span>
+          </button>
+          <div class="faq-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);">
+            <p style="padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;">Обычно разработка занимает от 3 до 5 рабочих дней в зависимости от сложности проекта и скорости согласования материалов.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass" style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);transition:border-color 0.3s ease;">
+          <button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;background:none;border:none;cursor:pointer;text-align:left;">
+            <span style="font-size:16px;font-weight:500;color:#e2e8f0;line-height:1.4;">Что нужно, чтобы начать работу?</span>
+            <span class="faq-icon" style="flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(0,245,255,0.25);display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#00f5ff;font-size:18px;font-weight:300;line-height:1;">+</span>
+          </button>
+          <div class="faq-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);">
+            <p style="padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;">Достаточно оставить заявку и заполнить небольшой бриф. Если материалов нет, мы подскажем, что потребуется.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass" style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);transition:border-color 0.3s ease;">
+          <button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;background:none;border:none;cursor:pointer;text-align:left;">
+            <span style="font-size:16px;font-weight:500;color:#e2e8f0;line-height:1.4;">Помогаете ли вы с доменом и размещением сайта?</span>
+            <span class="faq-icon" style="flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(0,245,255,0.25);display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#00f5ff;font-size:18px;font-weight:300;line-height:1;">+</span>
+          </button>
+          <div class="faq-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);">
+            <p style="padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;">Да. При необходимости поможем зарегистрировать домен, подключить его, настроить SSL и опубликовать сайт.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass" style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);transition:border-color 0.3s ease;">
+          <button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;background:none;border:none;cursor:pointer;text-align:left;">
+            <span style="font-size:16px;font-weight:500;color:#e2e8f0;line-height:1.4;">Что входит в настройку рекламы ВКонтакте?</span>
+            <span class="faq-icon" style="flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(0,245,255,0.25);display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#00f5ff;font-size:18px;font-weight:300;line-height:1;">+</span>
+          </button>
+          <div class="faq-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);">
+            <p style="padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;">Мы анализируем нишу, подбираем аудиторию, создаем рекламные объявления, настраиваем рекламную кампанию и запускаем её. Рекламный бюджет оплачивается клиентом отдельно.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass" style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);transition:border-color 0.3s ease;">
+          <button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;background:none;border:none;cursor:pointer;text-align:left;">
+            <span style="font-size:16px;font-weight:500;color:#e2e8f0;line-height:1.4;">Можно ли заказать только сайт без рекламы?</span>
+            <span class="faq-icon" style="flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(0,245,255,0.25);display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#00f5ff;font-size:18px;font-weight:300;line-height:1;">+</span>
+          </button>
+          <div class="faq-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);">
+            <p style="padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;">Да. Все услуги можно заказать отдельно или выбрать один из готовых пакетов.</p>
+          </div>
+        </div>
+
+        <div class="faq-item glass" style="border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);transition:border-color 0.3s ease;">
+          <button class="faq-trigger" onclick="toggleFaq(this)" style="width:100%;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:24px 28px;background:none;border:none;cursor:pointer;text-align:left;">
+            <span style="font-size:16px;font-weight:500;color:#e2e8f0;line-height:1.4;">Можно ли заказать только рекламу?</span>
+            <span class="faq-icon" style="flex-shrink:0;width:32px;height:32px;border-radius:50%;border:1px solid rgba(0,245,255,0.25);display:flex;align-items:center;justify-content:center;transition:all 0.3s ease;color:#00f5ff;font-size:18px;font-weight:300;line-height:1;">+</span>
+          </button>
+          <div class="faq-body" style="max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(0.4,0,0.2,1);">
+            <p style="padding:0 28px 24px;font-size:15px;color:rgba(255,255,255,0.5);line-height:1.7;">Да. Если у вас уже есть сайт, мы можем настроить рекламу ВКонтакте без разработки нового сайта.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-item.open {
+    border-color: rgba(0,245,255,0.18) !important;
+  }
+  .faq-item.open .faq-icon {
+    background: rgba(0,245,255,0.08);
+    border-color: rgba(0,245,255,0.45) !important;
+    box-shadow: 0 0 16px rgba(0,245,255,0.15);
+  }
+  @media (max-width: 768px) {
+    .faq-trigger { padding: 20px 20px !important; }
+    .faq-body p { padding: 0 20px 20px !important; }
+    .faq-trigger span:first-child { font-size: 15px !important; }
+  }
+</style>
+
+<script>
+  function toggleFaq(btn) {
+    const item = btn.closest('.faq-item');
+    const body = item.querySelector('.faq-body');
+    const icon = item.querySelector('.faq-icon');
+    const isOpen = item.classList.contains('open');
+
+    // Close all
+    document.querySelectorAll('.faq-item.open').forEach(el => {
+      el.classList.remove('open');
+      el.querySelector('.faq-body').style.maxHeight = '0';
+      el.querySelector('.faq-icon').textContent = '+';
+      el.querySelector('.faq-icon').style.transform = 'rotate(0deg)';
+    });
+
+    if (!isOpen) {
+      item.classList.add('open');
+      body.style.maxHeight = body.scrollHeight + 'px';
+      icon.textContent = '−';
+      icon.style.transform = 'rotate(0deg)';
+    }
+  }
+</script>
 
 <!-- FOOTER -->
 <footer style="border-top:1px solid rgba(255,255,255,0.05);padding:48px 0 32px;">
